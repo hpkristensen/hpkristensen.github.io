@@ -1,0 +1,376 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+.snip1322 {
+    font-family: 'Raleway', Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.snip1322 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.snip1322 li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: .5em 3.0em;
+    padding: 0;
+}
+
+.snip1322 a {
+    padding: 0 0.6em;
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    text-decoration: none;
+}
+
+.snip1322 a:before,
+.snip1322 a:after {
+    width: 3px;
+    height: 0;
+    position: absolute;
+    content: '';
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    background-color: #4d1600;
+}
+
+.snip1322 a:before {
+    bottom: 0;
+    right: 0;
+}
+
+.snip1322 a:after {
+    top: 0;
+    left: 0;
+}
+
+.snip1322 a:hover,
+.snip1322 .current a {
+    color: #ffffff;
+}
+
+.snip1322 a:hover:before,
+.snip1322 .current a:before,
+.snip1322 a:hover:after,
+.snip1322 .current a:after {
+    height: 100%;
+}
+
+body {
+    background-color: #8d583b;
+    padding: 50px 0;
+}
+
+IMG.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+img {
+    margin-top: -40px;
+    margin-bottom: -25px
+}
+
+.forsidebillede {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+hr {
+    background-color: antiquewhite;
+    height: 3px;
+    border: 0;
+}
+
+#content {
+    overflow: auto;
+    height: 100%;
+}
+
+#nav,
+#feature,
+#footer {
+    padding: 10px;
+    margin: 10px;
+}
+
+.column1,
+.column2,
+.column3 {
+    color: antiquewhite;
+    font-family: 'Raleway', Arial, sans-serif;
+    line-height: 2;
+    float: left;
+    /*width: 300px;
+    margin: 10px;
+    margin-left: 75px;
+    margin-right: 179px*/
+    width: 30%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+li {
+    display: inline;
+    padding: 5px
+}
+
+.bottomright {
+    text-align: right;
+}
+
+.bottomcenter {
+    text-align: center
+}
+
+.forsidebillede {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.coffee {
+    display: inline 20%;
+}
+
+#ice {
+    vertical-align: middle;
+}
+
+.text {
+    font-family: 'Raleway', Arial, sans-serif;
+    line-height: 2;
+    color: antiquewhite;
+}
+
+.tekstcenter {
+    text-align: center
+}
+
+.eventalign {
+    text-align: center
+}
+
+.container {
+    position: relative;
+    width: 25%;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+.logo {
+    height: 150px;
+}
+
+
+/*--------------------------------mobil-----------------------------------------*/
+
+
+footer {
+    background-color: #A8F59F;
+    clear: both;
+}
+
+@media screen and (min-width: 768px)and (max-width:979px) {
+
+    /* float flow */
+    .img-float,
+    .text-float {
+        width: 50%;
+        float: left;
+    }
+/*
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * All rights reserved
+ *
+ *
+ * If you are thinking of using this in
+ * production code, beware of the browser
+ * prefixes.
+ */
+
+body
+{
+  margin: 0;
+  padding: 0;
+  
+  /* make it look decent enough */
+  background: #232323;
+  color: #cdcdcd;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+a:hover
+{
+  color: tomato;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
