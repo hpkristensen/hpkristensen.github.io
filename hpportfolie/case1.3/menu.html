@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+       menu
+    </title>
+</head>
+
+<body>
+<header>
+        <!-- burger menu -->
+        
+        <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">Forside</a>
+    <a href="bestilling.html">Bestilling</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">Om os</a>
+    <a href="contact.html">Kontakt</a>
+  </div>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
+    </header>
+   <h1 class="sideoverskrift">
+    -Menu-
+    </h1>
+    <div class="clearfix">
+    <h2 class="h21">
+    Hamburger
+    </h2>
+    <img class="burger" src="images/hamburger.jpg" alt="Hamburger">
+    <p>Single Burger 50,-</p>
+    <p>Double Burger 70,-</p>
+    <p>Single Menu 80,-</p>
+    <p>Double Menu 100,-</p>
+    </div>
+        
+    <div class="clearfix">
+    <h2 class="h21">
+    Cheeseburger
+    </h2>
+    <img class="burger" src="images/cheeseburger.jpg" alt="Cheeseburger">
+    <p>Single Burger 55,-</p>
+    <p>Double Burger 75,-</p>
+    <p>Single Menu 85,-</p>
+    <p>Double Menu 105,-</p>
+    </div>
+    
+    <div class="clearfix">
+    <h2 class="h21">
+    Bacon Cheese Burger
+    </h2>
+    <img class="burger" src="images/baconcheese.jpg" alt="Bacon Cheese Burger">
+    <p>Single Burger 60,-</p>
+    <p>Double Burger 85,-</p>
+    <p>Single Menu 90,-</p>
+    <p>Double Menu 115,-</p>
+    </div>
+        
+    <footer>
+    <p class="clearfix">
+        &copy;Kødstaden 2017
+        </p>
+    </footer>
+    
+</body>
+</html>

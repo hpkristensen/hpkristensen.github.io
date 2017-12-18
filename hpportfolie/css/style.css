@@ -1,0 +1,40 @@
+.index {
+    margin: auto;
+    width: 50%;
+    align-content: center;
+}
+.menu {
+    font-family: serif;
+    text-align: center;
+    text-transform: uppercase;
+    background: transparent;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 5%;
+}
+
+.menu li {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-weight: bold;
+    display: block;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.menu a:hover {
+    background-color: grey;
+}
+.font {
+    font-family: sans-serif;
+}
